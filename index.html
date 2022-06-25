@@ -23,14 +23,20 @@
 <div>
     <nav class="uk-navbar uk-navbar-container uk-margin">
         <div class="uk-navbar-left">
-           <h4 class="m-2">Sandy</h4>
+            <h4 class="m-2">Sandy</h4>
         </div>
         <div class="uk-navbar-center">
             <a class="uk-navbar-toggle p-2" uk-toggle="target: #offcanvas-push">
                 <i class="ri-home-smile-line ri-2x"></i>
             </a>
         </div>
+        <div class="uk-navbar-right">
+            <button class="uk-button uk-button-default " type="button" uk-toggle="target: #offcanvas-overlay">Theme
+            </button>
+        </div>
     </nav>
+
+    <!--    UiKit   -->
     <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
         <div class="uk-offcanvas-bar" style="width: 210px;padding: 10px">
             <ul style="list-style: disclosure-closed;">
@@ -116,6 +122,16 @@
                 <li><a href="./tests/visibility.html">visibility</a></li>
                 <li><a href="./tests/width.html">width</a></li>
             </ul>
+        </div>
+    </div>
+    <!--    Theme   -->
+    <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar">
+
+            <ul style="list-style: disclosure-closed;">
+                <li><a href="./tests/accordion.html">Accordion</a></li>
+            </ul>
+
         </div>
     </div>
 
